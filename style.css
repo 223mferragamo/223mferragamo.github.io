@@ -1,0 +1,33 @@
+.panel-footer {
+  font-size: 110%;
+}
+
+.jumbotron {
+  background: url("https://media.istockphoto.com/photos/glowing-blue-binary-code-matrix-background-wide-banner-picture-id923729070?k=6&m=923729070&s=170667a&w=0&h=gfD_OFEzIpIZXbODmKQkhzfY89TGQ02bYd3ziLkxMt8=");
+  width:100%;
+  height:100%;
+  color:white;
+  background-color:black;
+}
+
+.indexbody {
+  background-color:black;
+  color:white;
+}
+
+.homecontact {
+  background-color:#212121;
+}
+
+.abt-table {
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+.abt-trow {
+  padding-left: 5%;
+}
+
+table.interactive:hover {
+  width:90%;
+}
