@@ -1,0 +1,74 @@
+.panel-footer {
+  font-size: 110%;
+}
+
+.indexbody {
+  background-color:black;
+  color:white;
+}
+
+.homecontact {
+  background-color:#212121;
+}
+
+.abt-table {
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+.abt-trow {
+  padding-left: 5%;
+}
+
+table.interactive:hover {
+  width:90%;
+}
+
+
+#indexjumbo {
+  background: url("https://media.istockphoto.com/photos/glowing-blue-binary-code-matrix-background-wide-banner-picture-id923729070?k=6&m=923729070&s=170667a&w=0&h=gfD_OFEzIpIZXbODmKQkhzfY89TGQ02bYd3ziLkxMt8=");
+  width:100%;
+  height:100%;
+  color:white;
+  background-color:black;
+}
+
+#summerjumbo {
+  background: url("https://publicdomainpictures.net/pictures/220000/velka/sandy-beach-1495208439ToU.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-text-fill-color:white;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:black;
+}
+
+#summersidenav {
+  opacity:0%;
+}
+
+.bodysummer {
+  background: url("https://www.tripsavvy.com/thmb/FwmQ-JvBEBDDlVb-j_zdEo0iVsA=/2048x1152/smart/filters:no_upscale()/beach-5b59c9b7c9e77c004b3e0ff0.jpg");
+  color:white;
+  -webkit-text-fill-color:white;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:black;
+}
+
+#summerbackground {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.summerp {
+  font-size: 17px;
+  -webkit-text-fill-color:white;
+  -webkit-text-stroke-width:0.2px;
+  -webkit-text-stroke-color:black;
+}
+
+.summercontact {
+  background-color: #212121;
+  color: white;
+}
