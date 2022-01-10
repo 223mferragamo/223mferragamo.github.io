@@ -72,3 +72,234 @@ table.interactive:hover {
   background-color: #212121;
   color: white;
 }
+
+
+.midTurkey {
+  width: 100%;
+  padding-bottom: 33%;
+}
+
+
+
+:root {
+  --dark-blue: #1c0c33;
+  --hot-pink: #fa243c;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark-blue);
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  height: 100vh;
+  background-color: #010542;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+a.collision {
+  text-decoration: underline;
+  color: #fff;
+  border: 1px solid #34deed;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  display: block;
+  height: 70px;
+  width: 110px;
+  overflow: hidden;
+  line-height: 70px;
+  text-align: center;
+  position: static;
+}
+
+a.collision::before,
+a.collision::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #34deed;
+  top: 50%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+a.collision::before {
+  transform: translate(-50%, -50%);
+  left: -20px;
+}
+
+a.collision::after {
+  transform: translate(50%, -50%);
+  right: -20px;
+}
+
+a.collision:hover::before {
+  animation: move-left 3s both;
+  animation-direction: alternate;
+}
+a.collision:hover::after {
+  animation: move-right 3s both;
+  animation-direction: alternate;
+}
+
+@keyframes move-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    height: 600px;
+    width: 600px;
+  }
+}
+
+@keyframes move-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    height: 400px;
+    width: 400px;
+  }
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: fix;
+	background-color: #2c2f69;
+  color:white;
+  font-size:24px;
+}
+.firework {
+	position: absolute;
+}
+.explosion {
+	position: absolute;
+	left: -2px;
+	bottom: 0;
+	width: 4px;
+	height: 80px;
+	transform-origin: 50% 100%;
+	/* background-color: rgba(0,0,0,.2); */
+	overflow: hidden;
+}
+.explosion:nth-child(1) {
+	transform: rotate(0deg) translateY(-15px);
+}
+.explosion:nth-child(2) {
+	transform: rotate(30deg) translateY(-15px);
+}
+.explosion:nth-child(3) {
+	transform: rotate(60deg) translateY(-15px);
+}
+.explosion:nth-child(4) {
+	transform: rotate(90deg) translateY(-15px);
+}
+.explosion:nth-child(5) {
+	transform: rotate(120deg) translateY(-15px);
+}
+.explosion:nth-child(6) {
+	transform: rotate(150deg) translateY(-15px);
+}
+.explosion:nth-child(7) {
+	transform: rotate(180deg) translateY(-15px);
+}
+.explosion:nth-child(8) {
+	transform: rotate(210deg) translateY(-15px);
+}
+.explosion:nth-child(9) {
+	transform: rotate(240deg) translateY(-15px);
+}
+.explosion:nth-child(10) {
+	transform: rotate(270deg) translateY(-15px);
+}
+.explosion:nth-child(11) {
+	transform: rotate(300deg) translateY(-15px);
+}
+.explosion:nth-child(12) {
+	transform: rotate(330deg) translateY(-15px);
+}
+
+.explosion::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100%;
+	height: 40px;
+	background-color: gold;
+}
+@keyframes explosion {
+	0% {
+		top: 100%;
+	}
+	33%, 100% {
+		top: -50%;
+	}
+}
+
+#firework1 {
+	left: 50%;
+	top: 50%;
+	transform: scale(1);
+}
+#firework1 .explosion::before {
+	animation: explosion 2s ease-in-out infinite;
+}
+
+#firework2 {
+	left: 40%;
+	top: 45%;
+	transform: scale(.7);
+}
+#firework2 .explosion::before {
+	animation: explosion 2s .6s ease-in-out infinite;
+}
+
+#firework3 {
+	left: 60%;
+	top: 65%;
+	transform: scale(.4);
+}
+#firework3 .explosion::before {
+	animation: explosion 2s .4s ease-in-out infinite;
+}
+}
+
+.newyearstext {
+  color: white;
+}
